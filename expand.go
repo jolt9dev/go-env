@@ -44,7 +44,7 @@ const (
 )
 
 func ExpandSafe(template string) string {
-	out, err := Expand(template, nil)
+	out, err := Expand(template)
 	if err != nil {
 		return ""
 	}
